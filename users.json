@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "gender": "male",
+      "email": "oscar.jensen@example.com",
+      "uuid": "b36ff9e7-16a4-413b-b99f-a3c5d568b86d",
+      "name": { "title": "Mr", "first": "Oscar", "last": "Jensen" },
+      "dob": { "date": "1947-05-22T17:54:45.797Z", "age": 73 },
+      "location": {
+        "street": { "number": 9506, "name": "Ågade" },
+        "city": "Nørrebro",
+        "state": "Syddanmark",
+        "country": "Denmark",
+        "postcode": 51491,
+        "coordinates": { "latitude": "-27.8190", "longitude": "-33.4933" },
+        "timezone": {
+          "offset": "-1:00",
+          "description": "Azores, Cape Verde Islands"
+        }
+      }
+    },
+    {
+      "gender": "female",
+      "uuid": "6966c57d-3431-46a9-b8d5-f202e486320a",
+      "email": "inalda.melo@example.com",
+      "name": { "title": "Mrs", "first": "Inalda", "last": "Melo" },
+      "location": {
+        "street": { "number": 7716, "name": "Rua José Bonifácio " },
+        "city": "Jaú",
+        "state": "Roraima",
+        "country": "Brazil",
+        "postcode": 30566,
+        "coordinates": { "latitude": "-78.9172", "longitude": "26.7748" },
+        "timezone": {
+          "offset": "-1:00",
+          "description": "Azores, Cape Verde Islands"
+        }
+      }
+    },
+    {
+      "gender": "male",
+      "email": "olivier.denys@example.com",
+      "dob": { "date": "1998-08-12T11:20:55.225Z", "age": 22 },
+      "name": { "title": "Mr", "first": "Olivier", "last": "Denys" },
+      "location": {
+        "street": { "number": 5311, "name": "Lakeview Ave" },
+        "city": "Minto",
+        "state": "New Brunswick",
+        "country": "Canada",
+        "postcode": "Y4G 2O1",
+        "coordinates": { "latitude": "-64.6340", "longitude": "-104.1806" },
+        "timezone": {
+          "offset": "-4:00",
+          "description": "Atlantic Time (Canada), Caracas, La Paz"
+        }
+      }
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Luca", "last": "Garcia" },
+      "email": "luca.garcia@example.com",
+      "dob": { "date": "1985-03-03T23:57:34.086Z", "age": 35 },
+      "location": {
+        "street": { "number": 8890, "name": "Cours Charlemagne" },
+        "city": "Reims",
+        "state": "Calvados",
+        "country": "France",
+        "postcode": 38373,
+        "coordinates": { "latitude": "-3.5692", "longitude": "-72.9521" },
+        "timezone": {
+          "offset": "+5:30",
+          "description": "Bombay, Calcutta, Madras, New Delhi"
+        }
+      }
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Oliver", "last": "Harris" },
+      "email": "oliver.harris@example.com",
+      "dob": { "date": "1953-06-06T11:12:28.638Z", "age": 67 },
+      "location": {
+        "street": { "number": 5716, "name": "Peel St" },
+        "city": "Port Elgin",
+        "state": "Newfoundland and Labrador",
+        "country": "Canada",
+        "postcode": "D6P 8J4",
+        "coordinates": { "latitude": "-61.4793", "longitude": "-77.1137" },
+        "timezone": {
+          "offset": "+4:00",
+          "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
+        }
+      }
+    }
+  ]
+}
