@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "ea4f239b-0565-4900-8f65-ba6422e8c95f",
+		"name": "OS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "With threads",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"start\": 2,\r\n    \"range\": 10000000,\r\n    \"threadCount\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/get-prime-numbers-using-worker-threads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"get-prime-numbers-using-worker-threads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Without threads",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"start\": 2,\r\n    \"range\": 10000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/get-prime-numbers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"get-prime-numbers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/get-users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"get-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"gender\": \"male\",\r\n        \"email\": \"ahsanyounus@gmail.com\",\r\n        \"uuid\": \"b36ff9e7-16a4-413b-b99f-adasdsalkdm2\",\r\n        \"name\": {\r\n            \"title\": \"Mr\",\r\n            \"first\": \"Ahsan\",\r\n            \"last\": \"Younus\"\r\n        },\r\n        \"dob\": {\r\n            \"date\": \"1800-01-01T00:00:00.797Z\",\r\n            \"age\": 220\r\n        },\r\n        \"location\": {\r\n            \"street\": {\r\n                \"number\": 9211,\r\n                \"name\": \"Wakanda\"\r\n            },\r\n            \"city\": \"Maripur\",\r\n            \"state\": \"Sindh\",\r\n            \"country\": \"Pakistan\",\r\n            \"postcode\": 51491,\r\n            \"coordinates\": {\r\n                \"latitude\": \"-27.8190\",\r\n                \"longitude\": \"-33.4933\"\r\n            },\r\n            \"timezone\": {\r\n                \"offset\": \"-1:00\",\r\n                \"description\": \"Azores, Cape Verde Islands\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/add-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"add-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"gender\": \"male\",\r\n        \"email\": \"ahsanyounus@gmail.com\",\r\n        \"uuid\": \"b36ff9e7-16a4-413b-b99f-adasdsalkdm2\",\r\n        \"name\": {\r\n            \"title\": \"Mr\",\r\n            \"first\": \"Ahsan\",\r\n            \"last\": \"Younus\"\r\n        },\r\n        \"dob\": {\r\n            \"date\": \"1800-01-01T00:00:00.797Z\",\r\n            \"age\": 220\r\n        },\r\n        \"location\": {\r\n            \"street\": {\r\n                \"number\": 9211,\r\n                \"name\": \"Wakanda\"\r\n            },\r\n            \"city\": \"Maripur\",\r\n            \"state\": \"Rajistan\",\r\n            \"country\": \"India\",\r\n            \"postcode\": 51491,\r\n            \"coordinates\": {\r\n                \"latitude\": \"-27.8190\",\r\n                \"longitude\": \"-33.4933\"\r\n            },\r\n            \"timezone\": {\r\n                \"offset\": \"-1:00\",\r\n                \"description\": \"Azores, Cape Verde Islands\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/update-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"update-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"gender\": \"male\",\r\n        \"email\": \"ahsanyounus@gmail.com\",\r\n        \"uuid\": \"b36ff9e7-16a4-413b-b99f-adasdsalkdm2\",\r\n        \"name\": {\r\n            \"title\": \"Mr\",\r\n            \"first\": \"Ahsan\",\r\n            \"last\": \"Younus\"\r\n        },\r\n        \"dob\": {\r\n            \"date\": \"1800-01-01T00:00:00.797Z\",\r\n            \"age\": 220\r\n        },\r\n        \"location\": {\r\n            \"street\": {\r\n                \"number\": 9211,\r\n                \"name\": \"Wakanda\"\r\n            },\r\n            \"city\": \"Maripur\",\r\n            \"state\": \"Rajistan\",\r\n            \"country\": \"India\",\r\n            \"postcode\": 51491,\r\n            \"coordinates\": {\r\n                \"latitude\": \"-27.8190\",\r\n                \"longitude\": \"-33.4933\"\r\n            },\r\n            \"timezone\": {\r\n                \"offset\": \"-1:00\",\r\n                \"description\": \"Azores, Cape Verde Islands\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/delete-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"delete-user"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
